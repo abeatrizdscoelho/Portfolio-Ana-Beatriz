@@ -51,7 +51,7 @@
     }
     #perfil{
         height: 83vh;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
     #sobre, #habilidade, #projetos, #certificados{
         margin-bottom: 0;
