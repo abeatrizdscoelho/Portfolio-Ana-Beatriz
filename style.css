@@ -122,7 +122,6 @@ a:hover{
 /* Seções */
 section{
     padding-top: 4vh;
-    height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -201,17 +200,15 @@ section{
 /* Seção "Sobre" */
 #sobre{
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 .seção-container{
-    gap: 4rem;
-    height: 90%;
-    width: 100%;
+    gap: 2rem;
 }
 .sobre-containers{
     gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .sobre-detalhes-container{
     justify-content: center;
@@ -238,6 +235,7 @@ section{
 /* Seção "Habilidades" */
 #habilidade{
     position: relative;
+    margin-bottom: 6rem;
 }
 .habilidade-sub-título{
     color: rgb(85, 85, 85);
@@ -269,7 +267,7 @@ article .icon{
 /* Seção "Projetos" */
 #projetos{
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 .color-container{
     border-color: rgb(163, 163, 163);
@@ -290,6 +288,7 @@ article .icon{
 /* Seção "Certificados" */
 #certificados{
     position: relative;
+    margin-bottom: 2rem;
 }
 .certificado-img{
     width: 100%;

@@ -51,6 +51,9 @@
     }
     #perfil{
         height: 83vh;
+        margin-bottom: 2rem;
+    }
+    #sobre, #habilidade, #projetos, #certificados{
         margin-bottom: 0;
     }
     article{
@@ -60,8 +63,11 @@
         height: fit-content;
         margin-bottom: 2rem;
     }
-    .sobre-containers, .contato-info-upper-container, .btn-container{
+    .contato-info-upper-container, .btn-container{
         flex-wrap: wrap;
+    }
+    .sobre-containers{
+        flex-direction: column;
     }
     .seção-texto, .seção-fotos-container{
         display: flex;
