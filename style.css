@@ -143,6 +143,12 @@ section{
     height: 400px;
     margin: auto 0;
 }
+.foto-sobre{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: auto 0;
+}
 .seção-texto{
     align-self: center;
     text-align: center;
@@ -160,6 +166,7 @@ section{
 .título{
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 1rem;
 }
 #socials-container{
     display: flex;
@@ -206,16 +213,10 @@ section{
     gap: 2rem;
 }
 .sobre-containers{
+    display: flex;
     gap: 2rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
-}
-.sobre-detalhes-container{
-    justify-content: center;
-    flex-direction: column;
-}
-.sobre-containers, .sobre-detalhes-container{
-    display: flex;
 }
 .detalhes-container{
     padding: 1.5rem;
