@@ -1,300 +1,356 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <title>Meu Portfólio</title>
-  </head>
-  <body>
-    <!-- NavBar -->
-    <nav id="desktop-nav">
-      <div class="logo">Ana Beatriz</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidade">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#certificados">Certificados</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <button id="toggle-dark-mode">Dark Mode</button>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <title>Meu Portfólio</title>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav id="desktop-nav">
+    <div class="logo">Ana Beatriz</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidade">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <button id="toggle-dark-mode">Dark Mode</button>
+      </ul>
+    </div>
+  </nav>
+  <!-- "Hamburguer" NavBar -->
+  <nav id="hamburger-nav">
+    <div class="logo">Ana Beatriz</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <!-- Usado para executar uma função quando um botão é clicado -->
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav> 
-    <!-- "Hamburguer" NavBar -->
-    <nav id="hamburger-nav">
-      <div class="logo">Ana Beatriz</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <!-- Usado para executar uma função quando um botão é clicado -->
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
-          <li><a href="#habilidade" onclick="toggleMenu()">Habilidades</a></li>
-          <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
-          <li><a href="#certificados" onclick="toggleMenu()">Certificados</a></li>
-          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+        <li><a href="#habilidade" onclick="toggleMenu()">Habilidades</a></li>
+        <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+        <li><a href="#certificados" onclick="toggleMenu()">Certificados</a></li>
+        <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
       </div>
-    </nav>
-    <!-- Perfil (Home) -->
-    <section id="perfil">
-      <div class="seção-fotos-container">
-        <img src="./assets/Foto de Perfil.png" alt="Ana Beatriz Foto Perfil" />
+    </div>
+  </nav>
+  <!-- Perfil (Home) -->
+  <section id="perfil">
+    <div class="seção-fotos-container">
+      <img src="./assets/Foto de Perfil.png" alt="Ana Beatriz Foto Perfil" />
+    </div>
+    <div class="seção-texto">
+      <p class="seção-texto-p1">Olá, eu sou a</p>
+      <h1 class="título">Ana Beatriz</h1>
+      <p class="seção-texto-p2">Desenvolvedora Web FullStack</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('./assets/Currículo Ana Beatriz Coelho.pdf')">Currículo</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contato'">Contato</button>
       </div>
-      <div class="seção-texto">
-        <p class="seção-texto-p1">Olá, eu sou a</p>
-        <h1 class="título">Ana Beatriz</h1>
-        <p class="seção-texto-p2">Desenvolvedora Web FullStack</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2"onclick="window.open('./assets/Currículo Ana Beatriz Coelho.pdf')">Currículo</button>
-          <button class="btn btn-color-1" onclick="location.href='./#contato'">Contato</button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="Meu Perfil LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/abeatrizcoelho/'"/>
-          <img src="./assets/github.png" alt="Meu Perfil GitHub" class="icon" onclick="location.href='https://github.com/abeatrizdscoelho'"/>
-        </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="Meu Perfil LinkedIn" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/abeatrizcoelho/'" />
+        <img src="./assets/github.png" alt="Meu Perfil GitHub" class="icon"
+          onclick="location.href='https://github.com/abeatrizdscoelho'" />
       </div>
-    </section>
-    <!-- Sobre -->
-    <section id="sobre">
-      <p class="seção-texto-p1">Saiba Mais</p>
-      <h1 class="título">Sobre Mim</h1>
-      <div class="seção-container">
-        <div class="foto-sobre">
-          <img src="./assets/Foto Perfil 02.jpeg" alt="Foto Perfil" class="sobre-foto" style="border-radius: 2rem;"/>
-        </div>
-          <div class="detalhes-container" style="text-align: center;">
-            <p>
-              Olá! Sou a Ana Beatriz, e estou cursando o 1º Semestre de Desenvolvimento de Software Multiplataforma na FATEC - São José dos Campos. <br> Tenho experiência em projetos que utilizam HTML, CSS e JavaScript, e possuo conhecimentos em Banco de Dados e Design Digital. <br> Meu objetivo é me especializar na área e me tornar uma Desenvolvedora Web FullStack. <br> Além disso, tenho grande interesse pelo aprendizado de idiomas, tendo atingido um nível intermediário de proficiência em inglês. <br> Meu conjunto de habilidades inclui capacidade de trabalho em equipe, pensamento crítico, adaptabilidade, aptidão para resolução de problemas, comunicação eficaz, organização, proatividade e resiliência. 
-            </p>
+    </div>
+  </section>
+  <!-- Sobre -->
+  <section id="sobre">
+    <p class="seção-texto-p1">Saiba Mais</p>
+    <h1 class="título">Sobre Mim</h1>
+    <div class="seção-container">
+      <div class="foto-sobre">
+        <img src="./assets/Foto Perfil 02.jpeg" alt="Foto Perfil" class="sobre-foto" style="border-radius: 2rem;" />
+      </div>
+      <div class="detalhes-container" style="text-align: center;">
+        <p>
+          Olá! Sou a Ana Beatriz, e estou cursando o 2º Semestre de Desenvolvimento de Software Multiplataforma na FATEC
+          - São José dos Campos. <br> Tenho experiência em projetos que utilizam HTML, CSS, JavaScript, Node.js,
+          TypeScript, React e possuo
+          conhecimentos em Banco de Dados, como MySQL, e Design Digital. <br> Meu objetivo é me especializar na área e
+          me tornar uma
+          Desenvolvedora Web FullStack. <br> Além disso, tenho grande interesse pelo aprendizado de idiomas, tendo
+          atingido um nível intermediário de proficiência em inglês. <br> Meu conjunto de habilidades inclui capacidade
+          de trabalho em equipe, pensamento crítico, adaptabilidade, aptidão para resolução de problemas, comunicação
+          eficaz, organização, proatividade e resiliência.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Habilidades -->
+  <section id="habilidade">
+    <p class="seção-texto-p1">Explore Minhas</p>
+    <h1 class="título">Habilidades</h1>
+    <div class="habilidade-detalhes-container">
+      <div class="sobre-containers">
+        <div class="detalhes-container">
+          <h2 class="habilidade-sub-título">Front-end</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>React</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=EzPCiQUqWWEa&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>TailwindCSS</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
           </div>
-      </div>
-    </section>
-    <!-- Habilidades -->
-    <section id="habilidade">
-        <p class="seção-texto-p1">Explore Minhas</p>
-        <h1 class="título">Habilidades</h1>
-        <div class="habilidade-detalhes-container">
-            <div class="sobre-containers">
-                <div class="detalhes-container">
-                   <h2 class="habilidade-sub-título">Front-end</h2>
-                    <div class="article-container">
-                    <article>
-                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                        <div>
-                            <h3>HTML</h3>
-                            <p>Avançado</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                        <div>
-                            <h3>CSS</h3>
-                            <p>Avançado</p>
-                        </div>
-                    </article>
-                    <article>
-                      <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                      <div>
-                          <h3>JavaScript</h3>
-                          <p>Básico</p>
-                      </div>
-                  </article>
-                    <article>
-                      <img src="https://img.icons8.com/?size=100&id=EzPCiQUqWWEa&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                      <div>
-                          <h3>Bootstrap</h3>
-                          <p>Avançado</p>
-                      </div>
-                  </article>
-                  <article>
-                      <img src="https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                      <div>
-                          <h3>TailwindCSS</h3>
-                          <p>Avançado</p>
-                      </div>
-                  </article>
-                </div>
-            </div>
-            <div class="detalhes-container">
-                <h2 class="habilidade-sub-título">Back-end</h2>
-                <div class="article-container">
-                <article>
-                    <img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                    <div>
-                        <h3>Git</h3>
-                        <p>Básico</p>
-                    </div>
-                </article>
-                <article>
-                    <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                    <div>
-                        <h3>MySQL</h3>
-                        <p>Intermediário</p>
-                    </div>
-                </article>
-                <article>
-                    <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                    <div>
-                        <h3>Python</h3>
-                        <p>Intermediário</p>
-                    </div>
-                </article>
-                <article>
-                  <img src="https://img.icons8.com/?size=100&id=AqYCfGyGXlO7&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                  <div>
-                      <h3>Flask</h3>
-                      <p>Intermediário</p>
-                  </div>
-              </article>
-            </div>
+        </div>
+        <div class="detalhes-container">
+          <h2 class="habilidade-sub-título">Back-end</h2>
+          <div class="article-container">
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>Git</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>Python</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>TypeScript</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>Node.js</h3>
+                <p>Intermediário</p>
+              </div>
+            </article>
+          </div>
         </div>
         <div class="detalhes-container">
           <h2 class="habilidade-sub-título">Ferramentas</h2>
           <div class="article-container">
             <article>
-              <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="Icon Habilidade" class="icon">
-                <div>
-                  <h3>GitHub</h3>
-                  <p>Avançado</p>
-                </div>
-            </article>  
-          <article>
-            <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Icon Habilidade" class="icon">
+              <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>GitHub</h3>
+                <p>Avançado</p>
+              </div>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
               <div>
                 <h3>Figma</h3>
                 <p>Intermediário</p>
               </div>
-          </article>
-          <article>
-            <img src="https://img.icons8.com/?size=100&id=RduYmqw5H7xm&format=png&color=000000" alt="Icon Habilidade" class="icon">
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=RduYmqw5H7xm&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
               <div>
                 <h3>Jira</h3>
                 <p>Intermediário</p>
               </div>
-          </article>
-          <article>
-            <img src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" alt="Icon Habilidade"class="icon">
-            <div>
-              <h3>AWS</h3>
-              <p>Básico</p>
-            </div>
-          </article>
-          <article>
-            <img src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000" alt="Icon Habilidade"class="icon">
-            <div>
-              <h3>Docker</h3>
-              <p>Básico</p>
-            </div>
-          </article>
-        </div>
-      </div>  
-    </section>
-    <!-- Projetos -->
-    <section id="projetos">
-        <p class="seção-texto-p1">Navegue em Meus Recentes</p>
-        <h1 class="título">Projetos</h1>
-        <div class="habilidade-detalhes-container">
-          <div class="sobre-containers">
-            <div class="detalhes-container color-container">
-                <div class="article-container">
-                    <img src="./assets/Projeto Tesla.png" alt="Projeto 01" class="projeto-img">
-                </div>
-                <h2 class="habilidade-sub-título projeto-título">Réplica do Site da Tesla</h2>
-                <p class="seção-texto-p1 seção-texto-projeto">Foi Realizado uma Réplica do Site da Tesla. <br>
-                Para a realização desse projeto utilizei HTML e CSS para a estruturação e estilização do
-                conteúdo, além de JavaScript para a implementação do formulário de compra.</p>
-                <div class="btn-container">
-                  <button class="btn btn-color-2" onclick="location.href='https://github.com/abeatrizdscoelho/Site-Tesla'">GitHub</button>
-                  <button class="btn btn-color-2" onclick="location.href='https://abeatrizdscoelho.github.io/Site-Tesla/'">Live Demo</button>
-                </div>
-            </div>
-            <div class="detalhes-container color-container">
-              <div class="article-container">
-                  <img src="./assets/Tela API.png" alt="Projeto 02" class="projeto-img">
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=33039&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>AWS</h3>
+                <p>Básico</p>
               </div>
-              <h2 class="habilidade-sub-título projeto-título">Acompanhamento do Desempenho dos Vereadores</h2>
-              <p class="seção-texto-p1 seção-texto-projeto">Criação de uma plataforma web que disponibiliza informações
-              sobre o desempenho dos vereadores da cidade de São José dos Campos durante o atual mandato. O objetivo é oferecer
-              aos eleitores dados claros e acessíveis que ajudem a tomar decisões informadas nas eleições municipais.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2" onclick="location.href='https://github.com/Draco-Imperium/API_FATEC1'">GitHub</button>
-                <button class="btn btn-color-2" onclick="location.href='https://github.com/abeatrizdscoelho/Projetos-API'">Ver Mais</button>
+            </article>
+            <article>
+              <img src="https://img.icons8.com/?size=100&id=22813&format=png&color=000000" alt="Icon Habilidade"
+                class="icon">
+              <div>
+                <h3>Docker</h3>
+                <p>Básico</p>
               </div>
+            </article>
           </div>
         </div>
-        </div>
-    </section>
-    <!-- Certificados -->
-    <section id="certificados">
-      <p class="seção-texto-p1">Veja Sobre Meus</p>
-      <h1 class="título">Certificados</h1>
-      <div class="habilidade-detalhes-container">
-        <div class="sobre-containers">
-          <div class="detalhes-container color-container">
-              <div class="article-container">
-                  <img src="./assets/Certificado Masterizando ChatGPT.png" alt="Certificado 01" class="certificado-img">
-              </div>
-              <h2 class="habilidade-sub-título certificado-título">Masterizando o ChatGPT</h2>
-              <p class="seção-texto-p1 seção-texto-projeto">O curso "Masterizando o Chat GPT", oferecido pela Adapta e ministrado por Max Peters, aborda aspectos essenciais da inteligência artificial generativa, oferecendo insights sobre como integrar essa tecnologia em diferentes contextos, seja para automação de tarefas, criação de conteúdo, atendimento ao cliente, entre outros.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Certificado Masterizando o ChatGPT.pdf')">Ver Mais</button>
-              </div>
+  </section>
+  <!-- Projetos -->
+  <section id="projetos">
+    <p class="seção-texto-p1">Navegue em Meus Recentes</p>
+    <h1 class="título">Projetos</h1>
+    <div class="habilidade-detalhes-container">
+      <div class="sobre-containers">
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./assets/Tela API.png" alt="Projeto 01" class="projeto-img">
           </div>
+          <h2 class="habilidade-sub-título projeto-título">Acompanhamento do Desempenho dos Vereadores</h2>
+          <p class="seção-texto-p1 seção-texto-projeto">Criação de uma plataforma web que disponibiliza informações
+            sobre o desempenho dos vereadores da cidade de São José dos Campos durante o atual mandato. O objetivo é
+            oferecer
+            aos eleitores dados claros e acessíveis que ajudem a tomar decisões informadas nas eleições municipais.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2"
+              onclick="location.href='https://github.com/Draco-Imperium/API_FATEC1'">GitHub</button>
+            <button class="btn btn-color-2"
+              onclick="location.href='https://github.com/abeatrizdscoelho/Projetos-API'">Ver Mais</button>
+          </div>
+        </div>
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./assets/Registro API 2ºDSM.png" alt="Projeto 02" class="projeto-img">
+          </div>
+          <h2 class="habilidade-sub-título projeto-título">Dashboard de Indicadores de Crescimento</h2>
+          <p class="seção-texto-p1 seção-texto-projeto">Dashboard de Indicadores de Crescimento para monitorar o impacto
+            da plataforma e acompanhar o crescimento das empresas cadastradas no Helpnei, exibindo dados estratégicos
+            para patrocinadores e investidores. E um sistema de captação de usuários interessados em patrocínio.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2"
+              onclick="location.href='https://github.com/GeneSys-fatec/API-2DSM'">GitHub</button>
+            <button class="btn btn-color-2"
+              onclick="location.href='https://github.com/abeatrizdscoelho/Projetos-API'">Ver Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Certificados -->
+  <section id="certificados">
+    <p class="seção-texto-p1">Veja Sobre Meus</p>
+    <h1 class="título">Certificados</h1>
+    <div class="habilidade-detalhes-container">
+      <div class="sobre-containers">
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./assets/Certificado Masterizando ChatGPT.png" alt="Certificado 01" class="certificado-img">
+          </div>
+          <h2 class="habilidade-sub-título certificado-título">Masterizando o ChatGPT</h2>
+          <p class="seção-texto-p1 seção-texto-projeto">O curso "Masterizando o Chat GPT", oferecido pela Adapta e
+            ministrado por Max Peters, aborda aspectos essenciais da inteligência artificial generativa, oferecendo
+            insights sobre como integrar essa tecnologia em diferentes contextos, seja para automação de tarefas,
+            criação de conteúdo, atendimento ao cliente, entre outros.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Certificado Masterizando o ChatGPT.pdf')">Ver
+              Mais</button>
+          </div>
+        </div>
         <div class="detalhes-container color-container">
           <div class="article-container">
             <img src="./assets/Certificado INOVA.png" alt="Certificado 03" class="certificado-img">
           </div>
           <h2 class="habilidade-sub-título certificado-título">Escola de Inovadores</h2>
-          <p class="seção-texto-p1 seção-texto-projeto">A Escola de Inovadores é um curso de extensão em empreendedorismo criado pela Inova CPS que visa fornecer ferramental básico de Empreendedorismo e Inovação disponibilizando um ambiente criativo e digital para que os participantes se capacitem e desenvolvam seus modelos de negócios.</p>
+          <p class="seção-texto-p1 seção-texto-projeto">A Escola de Inovadores é um curso de extensão em
+            empreendedorismo criado pela Inova CPS que visa fornecer ferramental básico de Empreendedorismo e Inovação
+            disponibilizando um ambiente criativo e digital para que os participantes se capacitem e desenvolvam seus
+            modelos de negócios.</p>
           <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/CERTIFICADO_-_2024-2.pdf')">Ver
               Mais</button>
           </div>
         </div>
       </div>
-      </div>
+    </div>
   </section>
-    <!-- Contato -->
-    <section id="contato">
-      <p class="seção-texto-p1">Entre em</p>
-      <h1 class="título">Contato</h1>
-      <div class="contato-info-upper-container">
-        <div class="contato-info-container">
-          <img src="./assets/email.png" alt="Email Icon" class="icon contato-icon email-icon">
-          <p><a href="mailto:anabeatrizdscoelho@gmail.com">anabeatrizdscoelho@gmail.com</a></p>
-        </div>
-        <div class="contato-info-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contato-icon">
-          <p><a href="https://www.linkedin.com/in/abeatrizcoelho/">LinkedIn</a></p>
-        </div>
+  <!-- Contato -->
+  <section id="contato">
+    <p class="seção-texto-p1">Entre em</p>
+    <h1 class="título">Contato</h1>
+    <div class="contato-info-upper-container">
+      <div class="contato-info-container">
+        <img src="./assets/email.png" alt="Email Icon" class="icon contato-icon email-icon">
+        <p><a href="mailto:anabeatrizdscoelho@gmail.com">anabeatrizdscoelho@gmail.com</a></p>
       </div>
-    </section>
-    <!-- Rodapé -->
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#habilidade">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#certificados">Certificados</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>&#169; 2024 Ana Beatriz da Silva Coelho. Todos os Direitos Reservados.</p>
-    </footer>
-    <script>
-      document.getElementById('toggle-dark-mode').addEventListener('click', function() {
-          document.body.classList.toggle('dark-mode');
-      });
-    </script>
-    <script src="script.js"></script>
-  </body>
+      <div class="contato-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon contato-icon">
+        <p><a href="https://www.linkedin.com/in/abeatrizcoelho/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- Rodapé -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidade">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#certificados">Certificados</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>&#169; 2024 Ana Beatriz da Silva Coelho. Todos os Direitos Reservados.</p>
+  </footer>
+  <script>
+    document.getElementById('toggle-dark-mode').addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
 </html>
