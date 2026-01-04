@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,14 +53,15 @@ a {
 
 a:hover {
   color: #ffb3ec;
-  text-decoration-color: #d0a8ff;
   text-decoration: underline;
   text-underline-offset: 1rem;
+  text-decoration-color: #ff61c2;
 }
 
 .logo {
   font-size: 2rem;
   color: #ff61c2;
+  text-shadow: 0 0 10px rgba(255, 97, 194, 0.3);
 }
 
 .logo:hover {
@@ -73,7 +75,7 @@ a:hover {
 
 .hamburger-menu {
   position: relative;
-  display: inline-block; /* Deixa um elemento pra trabalhar tanto como um elemento de bloco ou linha */
+  display: inline-block;
 }
 
 .hamburger-icon {
@@ -97,7 +99,7 @@ a:hover {
   top: 100%;
   right: 0;
   background-color: white;
-  width: fit-content; /* Permite que os elementos sejam dimensionados de acordo com o seu conteúdo, mas sem ultrapassar o tamanho máximo de conteúdo */
+  width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
@@ -128,18 +130,15 @@ a:hover {
 }
 
 .hamburger-icon.open span:first-child {
-  /* Primeiro Elememento (linha) */
-  transform: rotate(45deg) translate(10px, 5px); /* Mover a linha na direção X e Y para transformar em um "X" */
+  transform: rotate(45deg) translate(10px, 5px);
 }
 
 .hamburger-icon.open span:nth-child(2) {
-  /* Segundo Elememento (linha) */
-  opacity: 0; /* Esconde a segunda linha */
+  opacity: 0;
 }
 
 .hamburger-icon.open span:last-child {
-  /* Último Elememnto */
-  transform: rotate(-45deg) translate(10px, -5px); /* Mover a linha na direção X e Y para transformar em um "X" */
+  transform: rotate(-45deg) translate(10px, -5px);
 }
 
 .hamburger-icon span:first-child {
@@ -213,6 +212,9 @@ section {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1rem;
+  background: linear-gradient(135deg, #fff 30%, #ff61c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #socials-container {
@@ -252,14 +254,15 @@ section {
 .btn-color-1,
 .btn-color-2 {
   color: white;
-  background: #ff61c2;
-  border: #d1009e 0.1rem solid;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(209, 0, 158, 0.3);
+  background: linear-gradient(135deg, #ff61c2 0%, #d1009e 100%);
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
-  cursor: pointer;
-  background: #d1009e;
+  filter: brightness(1.1);
+  box-shadow: 0 6px 20px rgba(209, 0, 158, 0.5);
 }
 
 /* Seção "Sobre" */
@@ -283,12 +286,19 @@ section {
   padding: 1.5rem;
   flex: 1;
   color: #ffe0f7;
-  text-align: center;
   border-radius: 2rem;
   border-color: rgb(163, 163, 163);
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.detalhes-container:hover,
+.color-container:hover {
+  border-color: rgba(255, 97, 194, 0.4);
 }
 
 /* Seção "Habilidades" */
@@ -454,6 +464,159 @@ article .icon {
 .contato-info-container p {
   color: #f5ccff;
   font-size: larger;
+}
+
+/* Modal */
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.4s ease;
+  background-color: rgba(27, 0, 53, 0.7);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  padding: 2.5rem;
+  text-align: left;
+  max-height: 85vh;
+  border-radius: 2.5rem;
+  border: 1px solid rgba(255, 97, 194, 0.3);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(145deg, rgba(57, 0, 66, 0.98) 0%, rgba(27, 0, 53, 0.98) 100%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.modal-section {
+  padding-right: 5px;
+}
+
+.close-btn {
+  color: #ff61c2;
+  float: right;
+  font-size: 2rem;
+  font-weight: 200;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.close-btn:hover {
+  color: #fff;
+}
+
+#modal-titulo {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #fff 0%, #ff61c2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-subtitle {
+  color: #ff61c2;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+}
+
+.lista-estilizada {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.lista-estilizada li {
+  color: #ffe0f7;
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.lista-estilizada li::before {
+  content: "▹";
+  left: 0;
+  color: #ff61c2;
+  font-weight: bold;
+  position: absolute;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+  font-size: 0.85rem;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 97, 194, 0.4);
+  transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+  background: #ff61c2;
+  color: #1b0035;
+  border-color: #ff61c2;
+}
+
+/* Vídeo */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: none;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Seção "Footer" */

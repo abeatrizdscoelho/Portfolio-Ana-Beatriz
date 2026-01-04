@@ -71,13 +71,29 @@
       <div class="foto-sobre">
         <img src="./assets/Foto Perfil 02.jpeg" alt="Foto Perfil" class="sobre-foto" style="border-radius: 2rem;" />
       </div>
-      <div class="detalhes-container" style="text-align: center;">
-        <p>
-          Olá! Sou a Ana Beatriz, estudante do 3º semestre de Desenvolvimento de Software Multiplataforma na FATEC – São José dos Campos. Atualmente, sou estagiária na Nuel Tech, onde atuo no desenvolvimento do sistema ERP de gestão, contribuindo para a implementação de novas funcionalidades, melhorias no backend e frontend e correção de bugs. <br> 
-          Tenho experiência em projetos que utilizam TypeScript, Node.js, Java (Spring Boot), React e possuo
-          conhecimentos em Banco de Dados, como o MySQL e o MongoDB, além de outras ferramentas, padrões e metodologias. <br> 
-          Tenho grande interesse pelo aprendizado de idiomas, tendo atingido um nível avançado de proficiência em inglês. <br> Entre minhas principais soft skills, destaco: trabalho em equipe, pensamento crítico, adaptabilidade, resolução de problemas, comunicação, organização, proatividade e resiliência.
-        </p>
+      <div class="detalhes-container">
+        <h3 style="text-align: center">
+          Olá, eu sou a Bia!
+        </h3>
+        <br>
+        <ul class="lista-estilizada">
+          <li>
+            Estudante do 4º semestre de Desenvolvimento de Software Multiplataforma na Fatec de São José
+            dos Campos - Prof. Jessen Vidal.
+          </li>
+          <li>
+            Estagiária na Nuel Tech Soluções Inteligentes, onde contribuo para o desenvolvimento e
+            manutenção de um sistema ERP, trabalhando com back-end e front-end, implementação de novas funcionalidades,
+            melhorias e correção de bugs.
+          </li>
+          <li>
+            Inglês Avançado (B2).
+          </li>
+          <li>
+            Soft Skills: trabalho em equipe, adaptabilidade, resolução de problemas, comunicação, organização,
+            proatividade, resiliência e comprometimento.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -88,7 +104,7 @@
     <div class="habilidade-detalhes-container">
       <div class="sobre-containers">
         <div class="detalhes-container">
-          <h2 class="habilidade-sub-título">Front-end</h2>
+          <h2 class="habilidade-sub-título" style="text-align: center">Front-end</h2>
           <div class="article-container">
             <article>
               <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="Icon Habilidade"
@@ -141,7 +157,7 @@
           </div>
         </div>
         <div class="detalhes-container">
-          <h2 class="habilidade-sub-título">Back-end</h2>
+          <h2 class="habilidade-sub-título" style="text-align: center">Back-end</h2>
           <div class="article-container">
             <article>
               <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Icon Habilidade"
@@ -194,7 +210,7 @@
           </div>
         </div>
         <div class="detalhes-container">
-          <h2 class="habilidade-sub-título">Outras Tecnologias</h2>
+          <h2 class="habilidade-sub-título" style="text-align: center">Outras Tecnologias</h2>
           <div class="article-container">
             <article>
               <img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="Icon Habilidade"
@@ -251,10 +267,8 @@
   <section id="projetos">
     <p class="seção-texto-p1">Navegue em Meus Recentes</p>
     <h1 class="título">Projetos</h1>
-
     <div class="carrossel-container">
       <button class="carrossel-btn esquerda" onclick="moverCarrossel(-1)">&#10094;</button>
-
       <div class="carrossel-projetos-container">
         <div class="carrossel-projetos">
 
@@ -265,17 +279,23 @@
               <div class="article-container">
                 <img src="./assets/Tela API.png" alt="Projeto 01" class="projeto-img">
               </div>
-              <h2 class="habilidade-sub-título projeto-título">Desempenho de Vereadores</h2>
-              <p class="seção-texto-p1 seção-texto-projeto">Criação de uma plataforma web que disponibiliza informações
-                sobre o desempenho dos vereadores da cidade de São José dos Campos durante o atual mandato. O objetivo é
-                oferecer
-                aos eleitores dados claros e acessíveis que ajudem a tomar decisões informadas nas eleições municipais.
+              <h2 class="habilidade-sub-título projeto-título" style="text-align: center">Desempenho de Vereadores</h2>
+              <p class="seção-texto-p1 seção-texto-projeto">Plataforma web que disponibiliza informações
+                sobre o desempenho dos vereadores da cidade de São José dos Campos durante o atual mandato.
+                O objetivo é oferecer aos eleitores dados claros e acessíveis que ajudem a tomar decisões informadas nas
+                eleições municipais.
               </p>
               <div class="btn-container">
                 <button class="btn btn-color-2"
                   onclick="location.href='https://github.com/Draco-Imperium/API_FATEC1'">GitHub</button>
-                <button class="btn btn-color-2"
-                  onclick="location.href='https://github.com/abeatrizdscoelho/Portfolio-Documentado?tab=readme-ov-file#-api-fatec--2024-2-1%C2%BA-semestre'">Ver Mais</button>
+                <button class="btn btn-color-2" onclick="abrirModal(
+                  'Desempenho de Vereadores', 
+                  '<li>Criação dos wireframes no Figma, apresentando o protótipo ao cliente.</li><li>Desenvolvimento das telas de Vereadores Gerais e Perfil Individual de cada vereador, utilizando HTML e CSS.</li><li>Modelagem e criação do banco de dados MySQL para armazenar comentários e feedbacks de eleitores.</li><li>Implementação das funcionalidades de Comissões e Votações com Python (Flask).</li>', 
+                  'HTML5, CSS3, JavaScript, Python, Flask, MySQL, Figma', 
+                  'https://www.youtube.com/watch?v=NQjO5y1g220' 
+                )">
+                  Saiba Mais
+                </button>
               </div>
             </div>
 
@@ -284,7 +304,9 @@
               <div class="article-container">
                 <img src="./assets/Registro API 2ºDSM.png" alt="Projeto 02" class="projeto-img">
               </div>
-              <h2 class="habilidade-sub-título projeto-título">Dashboard de Indicadores de Crescimento</h2>
+              <h2 class="habilidade-sub-título projeto-título" style="text-align: center">
+                Dashboard de Indicadores de Crescimento
+              </h2>
               <p class="seção-texto-p1 seção-texto-projeto">Dashboard de Indicadores de Crescimento para monitorar o
                 impacto
                 da plataforma e acompanhar o crescimento das empresas cadastradas no Helpnei, exibindo dados
@@ -293,8 +315,18 @@
               <div class="btn-container">
                 <button class="btn btn-color-2"
                   onclick="location.href='https://github.com/GeneSys-fatec/API-2DSM'">GitHub</button>
-                <button class="btn btn-color-2"
-                  onclick="location.href='https://github.com/abeatrizdscoelho/Portfolio-Documentado?tab=readme-ov-file#-api-fatec--2024-2-1%C2%BA-semestre'">Ver Mais</button>
+                <button class="btn btn-color-2" onclick="abrirModal(
+                  'Dashboard de Indicadores', 
+                  '<li>Responsável por alinhar as expectativas do cliente com a equipe de desenvolvimento.</li>' +
+                  '<li>Levantamento de requisitos, criação de histórias de usuário e priorização de tarefas.</li>' +
+                  '<li>Definição de DoR/DoD e facilitação de planejamentos e metas de sprint.</li>' +
+                  '<li>Ponte direta com o cliente para validação de entregas e melhoria contínua.</li>' +
+                  '<li>Apoio na definição das métricas estratégicas do dashboard.</li>', 
+                  'HTML5, CSS3, Sass, React, JavaScript, TypeScript, Node.js, MySQL, Git, Figma', 
+                  'https://www.youtube.com/watch?v=0kPp-YthV4Y' 
+                )">
+                  Saiba Mais
+                </button>
               </div>
             </div>
           </div>
@@ -306,13 +338,25 @@
               <div class="article-container">
                 <img src="./assets/Registro API 3ºDSM.png" alt="Projeto 03" class="projeto-img">
               </div>
-              <h2 class="habilidade-sub-título projeto-título">Gerenciador de Tarefas</h2>
-              <p class="seção-texto-p1 seção-texto-projeto">Gerenciador de tarefas desenvolvido para centralizar e otimizar o fluxo de trabalho, contemplando criação de equipes e projetos, definição de tarefas por prioridade e responsáveis, quadros Kanban, quadro geral de atividades, métricas em um dashboard de produtividade e sincronização com o Google Calendar, garantindo organização, colaboração e entregas ágeis.</p>
+              <h2 class="habilidade-sub-título projeto-título" style="text-align: center">Gerenciador de Tarefas</h2>
+              <p class="seção-texto-p1 seção-texto-projeto">Gerenciador de tarefas desenvolvido para centralizar e
+                otimizar o fluxo de trabalho, contemplando criação de equipes e projetos, definição de tarefas por
+                prioridade e responsáveis, quadros Kanban, quadro geral de atividades, métricas em um dashboard de
+                produtividade e sincronização com o Google Calendar, garantindo organização, colaboração e entregas
+                ágeis.</p>
               <div class="btn-container">
                 <button class="btn btn-color-2"
                   onclick="location.href='https://github.com/GeneSys-fatec/API-3DSM?tab=readme-ov-file'">GitHub</button>
-                <button class="btn btn-color-2"
-                  onclick="location.href='https://github.com/abeatrizdscoelho/Portfolio-Documentado?tab=readme-ov-file#-api-fatec--2024-2-1%C2%BA-semestre'">Ver Mais</button>
+                <button class="btn btn-color-2" onclick="abrirModal(
+                  'Gerenciador de Tarefas', 
+                  '<li>Implementação de autenticação utilizando JWT com criptografia de senhas e armazenamento seguro em cookies.</li>' +
+                  '<li>Desenvolvimento completo da gestão de equipes, incluindo interface e integração com o servidor.</li>' +
+                  '<li>Criação de funcionalidades para edição de dados do usuário (foto, nome, e-mail e senha).</li>', 
+                  'HTML5, CSS3, JavaScript, React, Java, Spring Boot, TypeScript, Node.js, MongoDB, Git, Figma, Swagger', 
+                  'https://www.youtube.com/watch?v=wlwesDJHjl0' 
+                )">
+                  Saiba Mais
+                </button>
               </div>
             </div>
 
@@ -321,7 +365,7 @@
               <div class="article-container">
                 <img src="./assets/Nuel Tech.png" alt="Projeto 03" class="projeto-img">
               </div>
-              <h2 class="habilidade-sub-título projeto-título">Sistema Nuel Tech</h2>
+              <h2 class="habilidade-sub-título projeto-título" style="text-align: center">Sistema Nuel Tech</h2>
               <p class="seção-texto-p1 seção-texto-projeto">Este projeto é uma aplicação web que permite o Cadastro,
                 Leitura, Atualização e Exclusão (CRUD) de produtos, com sistema de autenticação de usuário integrado.
                 Desenvolvido como prática de integração entre front-end e back-end, o sistema possui uma interface
@@ -331,8 +375,16 @@
               <div class="btn-container">
                 <button class="btn btn-color-2"
                   onclick="location.href='https://github.com/abeatrizdscoelho/ProductControl'">GitHub</button>
-                <button class="btn btn-color-2"
-                  onclick="location.href='https://www.youtube.com/watch?v=UQCOrq3YJ58'">Ver Mais</button>
+                <button class="btn btn-color-2" onclick="abrirModal(
+                  'Sistema Nuel Tech', 
+                  '<li>Desenvolvimento completo da aplicação CRUD mais a autenticação.</li>' +
+                  '<li>Implementação do sistema de login com JWT e proteção de rotas no backend.</li>' +
+                  '<li>Criação de um front-end intuitivo para gerenciamento de produtos com feedback em tempo real.</li>', 
+                  'Node.js, JavaScript, Express, JWT, React, CSS3, Bootstrap, MySQL, Prisma ORM', 
+                  'https://www.youtube.com/watch?v=UQCOrq3YJ58' 
+                )">
+                  Saiba Mais
+                </button>
               </div>
             </div>
           </div>
@@ -344,12 +396,23 @@
               <div class="article-container">
                 <img src="./assets/World Beauty.png" alt="Projeto 05" class="projeto-img">
               </div>
-              <h2 class="habilidade-sub-título projeto-título">Sistema World Beauty</h2>
-              <p class="seção-texto-p1 seção-texto-projeto">Sistema completo de gerenciamento para o salão de beleza fictício World Beauty, desenvolvido para centralizar e facilitar as operações do estabelecimento. A aplicação permite cadastrar clientes, registrar produtos e serviços, controlar consumos realizados durante os atendimentos e gerar métricas e relatórios que auxiliam na tomada de decisões.</p>
+              <h2 class="habilidade-sub-título projeto-título" style="text-align: center">Sistema World Beauty</h2>
+              <p class="seção-texto-p1 seção-texto-projeto">Sistema completo de gerenciamento para o salão de beleza
+                fictício World Beauty, desenvolvido para centralizar e facilitar as operações do estabelecimento. A
+                aplicação permite cadastrar clientes, registrar produtos e serviços, controlar consumos realizados
+                durante os atendimentos e gerar métricas e relatórios que auxiliam na tomada de decisões.</p>
               <div class="btn-container">
                 <button class="btn btn-color-2"
                   onclick="location.href='https://github.com/abeatrizdscoelho/World-Beauty'">GitHub</button>
-                <button class="btn btn-color-2" onclick="location.href='https://youtu.be/vx9KHWr9XmE'">Ver Mais</button>
+                <button class="btn btn-color-2" onclick="abrirModal(
+                    'Sistema World Beauty', 
+                    '<li>Desenvolvimento completo de cadastros de clientes, produtos e serviços em um ambiente integrado.</li>' +
+                    '<li>Implementação de lógica para geração de relatórios de consumo e análise de métricas.</li>', 
+                    'TypeScript, Node.js, React, Bootstrap, MySQL, Prisma ORM', 
+                    'https://www.youtube.com/watch?v=vx9KHWr9XmE' 
+                )">
+                  Saiba Mais
+                </button>
               </div>
             </div>
 
@@ -358,14 +421,29 @@
               <div class="article-container">
                 <img src="./assets/Atlantis.png" alt="Projeto 06" class="projeto-img">
               </div>
-              <h2 class="habilidade-sub-título projeto-título">Sistema Atlantis</h2>
-              <p class="seção-texto-p1 seção-texto-projeto">Sistema completo de gerenciamento para o hotel/pousada/resort
+              <h2 class="habilidade-sub-título projeto-título" style="text-align: center">Atlantis - Ocean Solutions
+              </h2>
+              <p class="seção-texto-p1 seção-texto-projeto">Sistema completo de gerenciamento para o
+                hotel/pousada/resort
                 fictício Atlantis. <br>
-                A solução permite realizar o cadastro de clientes (hóspedes) tanto como titulares quanto como dependentes, gerenciar acomodações, registrar hospedagens e acessar listagens e consultas relacionadas a todas essas operações.</p>
+                A solução permite realizar o cadastro de clientes (hóspedes) tanto como titulares quanto como
+                dependentes, gerenciar acomodações, registrar hospedagens e acessar listagens e consultas relacionadas a
+                todas essas operações.</p>
               <div class="btn-container">
                 <button class="btn btn-color-2"
-                  onclick="location.href=' '">GitHub</button>
-                <button class="btn btn-color-2" onclick="location.href=' '">Ver Mais</button>
+                  onclick="location.href='https://github.com/abeatrizdscoelho/Atlantis/tree/main'">
+                  GitHub
+                </button>
+                <button class="btn btn-color-2" onclick="abrirModal(
+                    'Atlantis - Ocean Solutions', 
+                    '<li>Desenvolvimento de cadastro completo de clientes, acomodações e fluxos de hospedagem.</li>' +
+                    '<li>Criação da funcionalidade de ativar ou desativar clientes.</li>' +
+                    '<li>Implementação de lógica para Check-in e Check-out de hóspedes com atualização em tempo real.</li>',
+                    'TypeScript, React, TailwindCSS, MySQL, Prisma ORM', 
+                    '' 
+                )">
+                  Saiba Mais
+                </button>
               </div>
             </div>
           </div>
@@ -386,7 +464,7 @@
           <div class="article-container">
             <img src="./assets/Certificado Masterizando ChatGPT.png" alt="Certificado 01" class="certificado-img">
           </div>
-          <h2 class="habilidade-sub-título certificado-título">Masterizando o ChatGPT</h2>
+          <h2 class="habilidade-sub-título certificado-título" style="text-align: center">Masterizando o ChatGPT</h2>
           <p class="seção-texto-p1 seção-texto-projeto">O curso "Masterizando o Chat GPT", oferecido pela Adapta e
             ministrado por Max Peters, aborda aspectos essenciais da inteligência artificial generativa, oferecendo
             insights sobre como integrar essa tecnologia em diferentes contextos, seja para automação de tarefas,
@@ -402,7 +480,7 @@
           <div class="article-container">
             <img src="./assets/Certificado INOVA.png" alt="Certificado 03" class="certificado-img">
           </div>
-          <h2 class="habilidade-sub-título certificado-título">Escola de Inovadores</h2>
+          <h2 class="habilidade-sub-título certificado-título" style="text-align: center">Escola de Inovadores</h2>
           <p class="seção-texto-p1 seção-texto-projeto">A Escola de Inovadores é um curso de extensão em
             empreendedorismo criado pela Inova CPS que visa fornecer ferramental básico de Empreendedorismo e Inovação
             disponibilizando um ambiente criativo e digital para que os participantes se capacitem e desenvolvam seus
@@ -426,6 +504,28 @@
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <div id="modal-projeto" class="modal-container" onclick="fecharModal(event)">
+    <div class="modal-content detalhes-container color-container">
+      <span class="close-btn" onclick="fecharModal(event)">&times;</span>
+      <h2 id="modal-titulo" class="habilidade-sub-título projeto-título" style="margin-top: 0;">Título do Projeto</h2>
+      <div class="modal-section">
+        <h3 class="modal-subtitle">Minhas Contribuições</h3>
+        <ul id="modal-contribuicoes" class="lista-estilizada">
+        </ul>
+      </div>
+      <div class="modal-section">
+        <h3 class="modal-subtitle">Tecnologias Utilizadas</h3>
+        <div id="modal-tecnologias" class="tech-container">
+        </div>
+      </div>
+      <div id="video-wrapper" class="video-container">
+        <iframe id="modal-video" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
   <!-- Rodapé -->
   <footer>
     <nav>
