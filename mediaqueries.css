@@ -186,11 +186,6 @@
         font-size: 0.75rem;
         padding: 0.2rem 0.6rem;
     }
-
-    .foto-sobre {
-        width: 280px;
-        height: 280px;
-    }
 }
 
 @media screen and (max-width: 768px) {
