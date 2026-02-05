@@ -50,7 +50,7 @@
     <div class="seção-texto">
       <p class="seção-texto-p1">Olá, eu sou a</p>
       <h1 class="título">Ana Beatriz</h1>
-      <p class="seção-texto-p2">Desenvolvedora Web FullStack</p>
+      <p class="seção-texto-p2">Desenvolvedora Full Stack</p>
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/Currículo.pdf')">Currículo</button>
         <button class="btn btn-color-1" onclick="location.href='./#contato'">Contato</button>
@@ -68,32 +68,27 @@
     <p class="seção-texto-p1">Saiba Mais</p>
     <h1 class="título">Sobre Mim</h1>
     <div class="seção-container">
-      <div class="foto-sobre">
-        <img src="./assets/Foto Perfil 02.jpeg" alt="Foto Perfil" class="sobre-foto" style="border-radius: 2rem;" />
+      <div class="foto-sobre" style="width: 400px; height: 400px; margin: auto 0;">
+        <img src="./assets/sobre-foto.jpeg" alt="Foto Perfil" class="sobre-foto" />
       </div>
-      <div class="detalhes-container">
-        <h3 style="text-align: center">
-          Olá, eu sou a Bia!
-        </h3>
-        <br>
-        <ul class="lista-estilizada">
-          <li>
-            Estudante do 4º semestre de Desenvolvimento de Software Multiplataforma na Fatec de São José
-            dos Campos - Prof. Jessen Vidal.
-          </li>
-          <li>
-            Estagiária na Nuel Tech Soluções Inteligentes, onde contribuo para o desenvolvimento e
-            manutenção de um sistema ERP, trabalhando com back-end e front-end, implementação de novas funcionalidades,
-            melhorias e correção de bugs.
-          </li>
-          <li>
-            Inglês Avançado (B2).
-          </li>
-          <li>
-            Soft Skills: trabalho em equipe, adaptabilidade, resolução de problemas, comunicação, organização,
-            proatividade, resiliência e comprometimento.
-          </li>
-        </ul>
+      <div class="sobre-detalhes-container">
+        <div class="sobre-containers">
+          <div class="detalhes-container">
+            <img src="./assets/experience.png" alt="Experiência Ícone" class="icon" style="width: 50px; height: 50px;">
+            <h3>Experiência</h3>
+            <p>6+ meses <br>Desenvolvedora Full Stack</p>
+          </div>
+          <div class="detalhes-container">
+            <img src="./assets/education.png" alt="Experiência Ícone" class="icon" style="width: 50px; height: 50px;">
+            <h3>Educação</h3>
+            <p>Graduação Jun/2027 <br> Desenvolvimento de Software M. <br> Fatec - São José dos Campos</p>
+          </div>
+        </div>
+        <div class="seção-texto">
+          <p>
+            Desenvolvedora Full Stack, atuo principalmente com tecnologias como TypeScript, Node.js e React. Tenho experiência no ciclo completo de software, desde a automação de processos e integração de APIs até a modelagem de dados com SQL e Prisma. Aplicando metodologias ágeis e boas práticas de arquitetura, foco na entrega de soluções funcionais e código bem estruturado.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -290,8 +285,8 @@
                   onclick="location.href='https://github.com/Draco-Imperium/API_FATEC1'">GitHub</button>
                 <button class="btn btn-color-2" onclick="abrirModal(
                   'Desempenho de Vereadores', 
-                  '<li>Criação dos wireframes no Figma, apresentando o protótipo ao cliente.</li><li>Desenvolvimento das telas de Vereadores Gerais e Perfil Individual de cada vereador, utilizando HTML e CSS.</li><li>Modelagem e criação do banco de dados MySQL para armazenar comentários e feedbacks de eleitores.</li><li>Implementação das funcionalidades de Comissões e Votações com Python (Flask).</li>', 
-                  'HTML5, CSS3, JavaScript, Python, Flask, MySQL, Figma', 
+                  '<li>Criação dos wireframes no Figma.</li><li>Desenvolvimento das telas de Vereadores Gerais e Perfil Individual de cada vereador, utilizando HTML e CSS.</li><li>Modelagem e criação do banco de dados MySQL para armazenar comentários e feedbacks de eleitores.</li><li>Implementação das funcionalidades de Comissões e Votações com Python (Flask).</li>', 
+                  'Python, Flask, JavaScript, HTML5, CSS3, MySQL, Git, Figma', 
                   'https://www.youtube.com/watch?v=NQjO5y1g220' 
                 )">
                   Saiba Mais
@@ -322,7 +317,7 @@
                   '<li>Definição de DoR/DoD e facilitação de planejamentos e metas de sprint.</li>' +
                   '<li>Ponte direta com o cliente para validação de entregas e melhoria contínua.</li>' +
                   '<li>Apoio na definição das métricas estratégicas do dashboard.</li>', 
-                  'HTML5, CSS3, Sass, React, JavaScript, TypeScript, Node.js, MySQL, Git, Figma', 
+                  'TypeScript, Node.js, React, HTML5, CSS3, Sass, JavaScript, MySQL, Git, Figma', 
                   'https://www.youtube.com/watch?v=0kPp-YthV4Y' 
                 )">
                   Saiba Mais
@@ -352,7 +347,7 @@
                   '<li>Implementação de autenticação utilizando JWT com criptografia de senhas e armazenamento seguro em cookies.</li>' +
                   '<li>Desenvolvimento completo da gestão de equipes, incluindo interface e integração com o servidor.</li>' +
                   '<li>Criação de funcionalidades para edição de dados do usuário (foto, nome, e-mail e senha).</li>', 
-                  'HTML5, CSS3, JavaScript, React, Java, Spring Boot, TypeScript, Node.js, MongoDB, Git, Figma, Swagger', 
+                  'Java, Spring Boot, React, MongoDB, Git, Figma, Swagger', 
                   'https://www.youtube.com/watch?v=wlwesDJHjl0' 
                 )">
                   Saiba Mais
@@ -380,7 +375,7 @@
                   '<li>Desenvolvimento completo da aplicação CRUD mais a autenticação.</li>' +
                   '<li>Implementação do sistema de login com JWT e proteção de rotas no backend.</li>' +
                   '<li>Criação de um front-end intuitivo para gerenciamento de produtos com feedback em tempo real.</li>', 
-                  'Node.js, JavaScript, Express, JWT, React, CSS3, Bootstrap, MySQL, Prisma ORM', 
+                  'Node.js, JavaScript, Express, JWT, React, CSS3, Bootstrap, MySQL, Prisma ORM, Git', 
                   'https://www.youtube.com/watch?v=UQCOrq3YJ58' 
                 )">
                   Saiba Mais
@@ -408,7 +403,7 @@
                     'Sistema World Beauty', 
                     '<li>Desenvolvimento completo de cadastros de clientes, produtos e serviços em um ambiente integrado.</li>' +
                     '<li>Implementação de lógica para geração de relatórios de consumo e análise de métricas.</li>', 
-                    'TypeScript, Node.js, React, Bootstrap, MySQL, Prisma ORM', 
+                    'TypeScript, Node.js, React, Bootstrap, MySQL, Prisma ORM, Git', 
                     'https://www.youtube.com/watch?v=vx9KHWr9XmE' 
                 )">
                   Saiba Mais
@@ -439,7 +434,7 @@
                     '<li>Desenvolvimento de cadastro completo de clientes, acomodações e fluxos de hospedagem.</li>' +
                     '<li>Criação da funcionalidade de ativar ou desativar clientes.</li>' +
                     '<li>Implementação de lógica para Check-in e Check-out de hóspedes com atualização em tempo real.</li>',
-                    'TypeScript, React, TailwindCSS, MySQL, Prisma ORM', 
+                    'TypeScript, React, TailwindCSS, MySQL, Prisma ORM, Git', 
                     '' 
                 )">
                   Saiba Mais
