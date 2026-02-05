@@ -272,7 +272,7 @@ section {
 }
 
 .seção-container {
-  gap: 2rem;  
+  gap: 2rem;
 }
 
 .sobre-containers {
@@ -305,6 +305,13 @@ section {
 .detalhes-container:hover,
 .color-container:hover {
   border-color: rgba(255, 97, 194, 0.4);
+}
+
+.foto-sobre {
+  width: 400px;
+  height: 400px;
+  margin: auto 0;
+  display: flex;
 }
 
 .sobre-foto {
@@ -624,6 +631,7 @@ body.modal-open {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
